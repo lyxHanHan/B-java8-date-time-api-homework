@@ -17,6 +17,7 @@ public class Practice1 {
     LocalDate laborDay = LocalDate.of(Integer.parseInt(Year.now().toString()), 5, 1);
     if(date.isBefore(laborDay)){
       return DAYS.between(date,laborDay);
+
     }
     return DAYS.between(date,laborDay.plusYears(1));  }
 }
